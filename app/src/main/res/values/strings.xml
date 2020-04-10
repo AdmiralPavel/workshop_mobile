@@ -8,4 +8,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="sign_up">Sign up</string>
     <string name="send_review">Send review</string>
+    <string name="see_reviews">See reviews</string>
+    <string name="log_in">Log in</string>
+    <string name="add_review">Add review</string>
+    <string name="services">Services</string>
+    <string name="profile">Profile</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot Password?</string>
 </resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MasterDetailsFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/masterDetailsPhoto"
+        android:layout_width="@dimen/circle_image_view_size"
+        android:layout_height="@dimen/circle_image_view_size"
+        android:layout_margin="@dimen/default_margin"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/master_details_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_toEndOf="@id/masterDetailsPhoto"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:text="Name\nSurname" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sessionRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/masterDetailsPhoto" />
+
+    <Button
+        android:id="@+id/reviewsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/see_reviews" />
+</RelativeLayout>
